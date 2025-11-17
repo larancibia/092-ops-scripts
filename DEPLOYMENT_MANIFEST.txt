@@ -1,0 +1,263 @@
+===============================================================================
+COMPLETE DEPLOYMENT SYSTEM MANIFEST
+Generated: 2025-11-17
+GuanacoLabs - 84 Projects Complete Deployment Automation
+===============================================================================
+
+SERVER INFORMATION
+------------------
+IP Address: 217.216.64.237
+Domain: guanacolabs.com
+Total Projects: 84
+Cloudflare Email: arancibialuisalejandro@gmail.com
+
+SYSTEM CREATED
+--------------
+This deployment system provides complete automation for deploying all 84
+GuanacoLabs projects with their full infrastructure stack.
+
+PROJECT CATEGORIZATION
+----------------------
+Full-Stack Web Apps:     14 projects (7,168 MB RAM, 7.00 CPU cores)
+Backend APIs:            11 projects (2,816 MB RAM, 2.75 CPU cores)
+Frontend-Only Apps:       3 projects (  384 MB RAM, 0.30 CPU cores)
+MCP Servers:              7 projects (  448 MB RAM, 0.35 CPU cores)
+CLI Tools:                9 projects (  576 MB RAM, 0.45 CPU cores)
+Archived Projects:        6 projects (  384 MB RAM, 0.30 CPU cores)
+Unknown/Needs Review:    34 projects (2,176 MB RAM, 1.70 CPU cores)
+                        ----         -------      -----
+TOTAL:                   84 projects (13,952 MB RAM, 12.85 CPU cores)
+                                    (13.62 GB)
+
+DEPLOYMENT SCRIPTS CREATED (7 core + 2 generators)
+---------------------------------------------------
+Location: /home/luis/scripts/
+
+1. deploy-project.sh           - Deploy single project (full stack)
+2. deploy-all.sh               - Deploy all 84 projects in phases
+3. setup-dns-all.sh            - Create all Cloudflare DNS records
+4. setup-ssl-all.sh            - Setup SSL certificates (Let's Encrypt)
+5. verify-deployments.sh       - Health check all services
+6. setup-shared-databases.sh   - Create shared DB infrastructure
+7. analyze-projects.sh         - Analyze tech stack of all projects
+
+8. categorize-and-deploy-generator.py - Project categorization
+9. generate-deployment-configs.py     - Config generator
+
+CONFIGURATIONS GENERATED
+------------------------
+Location: /home/luis/deployment-configs/
+
+- Nginx Configs:          126 files (main, api, landing for each project)
+- Docker Compose Files:    19 files (for projects needing containers)
+- Generated Dockerfiles:    3 files (for projects missing them)
+- Project Directories:     84 directories (one per project)
+
+DOCUMENTATION CREATED
+---------------------
+Location: /home/luis/
+
+1. COMPLETE_DEPLOYMENT_GUIDE.md    - Comprehensive 500+ line guide
+2. DEPLOYMENT_SUMMARY_REPORT.md    - Executive summary & detailed analysis
+3. QUICK_START.md                  - Quick start instructions
+
+ANALYSIS & DATA FILES
+---------------------
+Location: /home/luis/scripts/
+
+1. project-analysis.json            - Tech stack analysis of all projects
+2. deployment-categorization.json   - Categorization + resource estimates
+3. all-domains.txt                  - List of all domains (generated on DNS setup)
+
+SHARED DATABASE INFRASTRUCTURE
+-------------------------------
+Location: /home/luis/shared-databases/
+
+Containers:
+- postgres-main (Port 5432)     - 7 projects sharing
+- postgres-ai (Port 5433)       - 4 projects sharing
+- postgres-finance (Port 5434)  - Finance projects
+- redis-main (Port 6379)        - 2 projects sharing
+- redis-ai (Port 6380)          - 3 projects sharing
+
+Files:
+- docker-compose.yml            - Shared DB infrastructure
+- .env                          - Database passwords (SECURE!)
+- CONNECTION_STRINGS.md         - Connection documentation
+- init-scripts/01-create-databases.sql
+
+Resource Savings: ~21 GB RAM (vs 168 separate DB containers)
+
+NGINX CONFIGURATIONS
+--------------------
+Location: /etc/nginx/sites-available/ and /etc/nginx/sites-enabled/
+
+Virtual Hosts Created: 126
+- Main app domains:    ~17 (fullstack/frontend projects)
+- API subdomains:      ~25 (fullstack/backend projects)
+- Landing pages:       ~84 (all projects)
+
+LANDING PAGES
+-------------
+Location: /var/www/landing-pages/
+
+Directory for each project: 84 directories
+Default landing page created for all projects
+
+DNS RECORDS (To Be Created)
+----------------------------
+Total DNS Records: ~150-200 A records
+
+Format:
+- <project>.guanacolabs.com              (main apps)
+- api.<project>.guanacolabs.com          (API endpoints)
+- landing.<project>.guanacolabs.com      (landing pages)
+
+SSL CERTIFICATES (To Be Created)
+---------------------------------
+Total Certificates: ~150-200 (or 1 wildcard for *.guanacolabs.com)
+
+Auto-renewal: Configured via cron
+
+DEPLOYMENT PROCESS
+------------------
+Phases: 6 phases
+
+Phase 1: Critical (Already Running) - 5 projects - Skip
+Phase 2: High Priority Full-Stack  - 14 projects - Individual deployment
+Phase 3: Backend APIs              - 11 projects - Batches of 5
+Phase 4: Frontend Apps             - 3 projects  - All at once
+Phase 5: MCP Servers & CLI Tools   - 16 projects - Batches of 10
+Phase 6: Unknown & Archived        - 40 projects - Batches of 15
+
+Total Time Estimate: 4-7 hours (90% automated)
+
+RESOURCE REQUIREMENTS
+---------------------
+Total RAM Required:   13.62 GB
+Total CPU Required:   12.85 cores
+Total Disk Required:  ~50-80 GB
+Active Containers:    ~47 containers
+Nginx VHosts:         126 virtual hosts
+
+ESTIMATED BREAKDOWN
+-------------------
+Frontend containers:  ~17
+Backend containers:   ~25
+Database containers:   5 (shared)
+Total:               ~47 containers
+
+DEPLOYMENT COMMAND SEQUENCE
+----------------------------
+cd /home/luis/scripts
+
+# 1. Setup shared databases (5 min)
+./setup-shared-databases.sh
+
+# 2. Deploy all projects (2-3 hrs)
+./deploy-all.sh
+
+# 3. Setup DNS (30 min)
+./setup-dns-all.sh
+
+# 4. Setup SSL (1-3 hrs)
+./setup-ssl-all.sh
+
+# 5. Verify (10 min)
+./verify-deployments.sh
+
+CURRENT STATUS
+--------------
+[x] Project analysis complete
+[x] Categorization complete
+[x] Deployment scripts created
+[x] Configuration files generated
+[x] Documentation created
+[x] Shared database infrastructure defined
+[x] Resource estimates calculated
+[x] Deployment order planned
+[ ] Cloudflare API key needs verification (CF_EMAIL found, CF_API_KEY needs check)
+[ ] Ready to deploy (pending API key verification)
+
+NEXT STEPS
+----------
+1. Verify Cloudflare API key in ~/.zshrc
+2. Run: ./setup-shared-databases.sh
+3. Run: ./deploy-all.sh
+4. Run: ./setup-dns-all.sh
+5. Run: ./setup-ssl-all.sh
+6. Run: ./verify-deployments.sh
+
+MONITORING & VERIFICATION
+--------------------------
+Health Check Command:  ./verify-deployments.sh
+Docker Status:         docker ps && docker stats --no-stream
+Nginx Status:          sudo nginx -t && sudo systemctl status nginx
+Database Status:       docker exec -it postgres-main pg_isready
+
+SECURITY NOTES
+--------------
+- Database passwords auto-generated in /home/luis/shared-databases/.env
+- SSL/TLS encryption via Let's Encrypt
+- Nginx reverse proxy for all services
+- Cloudflare DNS with DDoS protection
+- Review and update passwords before production use
+
+OPTIMIZATION ACHIEVED
+---------------------
+Before: 168 database containers (84 PostgreSQL + 84 Redis)
+After:  5 database containers (3 PostgreSQL + 2 Redis)
+Saved:  ~21 GB RAM (97% reduction in database infrastructure)
+
+PROJECT HIGHLIGHTS
+------------------
+Full-Stack Web Apps (14):
+  - AutoScribe, BotFactory, DevTeamAI, GuanacoWeb, KeyDashboard
+  - PassRotate, ResearchBot, TermOrchestra, CodeFireman, FiremanDev
+  - ScrumBots, AutoScrum, ClaudeFlow, ChatTyper
+
+Backend APIs (11):
+  - ArbitrageBot, AutoScrum, ClaudeFlow, DocMa, FintelliView
+  - MailGenius, NautaChallenge, ScrumBots, TermOrchestra
+  - ResearchBot, PassRotate
+
+Frontend-Only (3):
+  - GuanacoOld, OrthoPosture, SignalsLab, SideDoc
+
+MCP Servers (7):
+  - VaultConnect, VaultPro, MailBridge, ScribeBridge
+  - ArchiveBridge, WhatsGuard
+
+CLI Tools (9):
+  - CoderX, DriverAgent, FeedSync, GuanacoBot, MoneyMaker
+  - QRGen, ScribeBridge, TradeBook, TradeScripts
+
+Already Running (5):
+  - GuanacoHome (3000), ProjectHub (3001/8001)
+  - AutoScribe (13556/5432), ArtisDoc (9000/9090)
+  - AiderPlus (3038)
+
+SUPPORT DOCUMENTATION
+---------------------
+Quick Start:           /home/luis/QUICK_START.md
+Complete Guide:        /home/luis/COMPLETE_DEPLOYMENT_GUIDE.md
+Summary Report:        /home/luis/DEPLOYMENT_SUMMARY_REPORT.md
+This Manifest:         /home/luis/scripts/DEPLOYMENT_MANIFEST.txt
+
+CONTACT & CREDENTIALS
+---------------------
+Cloudflare Email:      arancibialuisalejandro@gmail.com
+Zone:                  guanacolabs.com
+Server IP:             217.216.64.237
+Port Registry:         /home/luis/port-registry.json
+
+===============================================================================
+END OF MANIFEST
+===============================================================================
+
+Ready to deploy all 84 GuanacoLabs projects!
+
+Quick Start: cat /home/luis/QUICK_START.md
+Full Guide:  cat /home/luis/COMPLETE_DEPLOYMENT_GUIDE.md
+
+===============================================================================

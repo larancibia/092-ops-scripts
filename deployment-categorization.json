@@ -1,0 +1,2469 @@
+{
+  "generated_at": "2025-11-17",
+  "server_ip": "217.216.64.237",
+  "zone": "guanacolabs.com",
+  "summary": {
+    "total_projects": 84,
+    "by_category": {
+      "fullstack_web": 14,
+      "backend_api": 11,
+      "frontend_only": 3,
+      "mcp_servers": 7,
+      "cli_tools": 9,
+      "archived": 6,
+      "unknown": 34
+    },
+    "total_ram_mb": 13952,
+    "total_ram_gb": 13.62,
+    "total_cpu_cores": 12.85
+  },
+  "categories": {
+    "fullstack_web": [
+      "GuanacoWeb",
+      "AutoScribe",
+      "FiremanDev",
+      "CodeFireman",
+      "StrategyLab",
+      "OCRTester",
+      "ProjectHub",
+      "GuanacoPlatfm",
+      "DeployHub",
+      "AgroPlatform",
+      "FarmManager",
+      "ArtisDocNext",
+      "ArtisDoc",
+      "KeyDashboard"
+    ],
+    "backend_api": [
+      "AutoScrum",
+      "MailGenius",
+      "ClaudeFlow",
+      "ResearchBot",
+      "TermOrchestra",
+      "ArbitrageBot",
+      "FintelliView",
+      "PassRotate",
+      "BotFactory",
+      "DocMa",
+      "NautaChallenge"
+    ],
+    "frontend_only": [
+      "SideDoc",
+      "OrthoPosture",
+      "SignalsLab"
+    ],
+    "mcp_servers": [
+      "ClaudeConfig",
+      "VaultConnect",
+      "MailBridge",
+      "ScribeBridge",
+      "VaultPro",
+      "ArchiveBridge",
+      "WhatsGuard"
+    ],
+    "cli_tools": [
+      "CoderX",
+      "ScrumBots",
+      "DriverAgent",
+      "TradeBook",
+      "TradeScripts",
+      "MoneyMaker",
+      "QRGen",
+      "FeedSync",
+      "GuanacoBot"
+    ],
+    "archived": [
+      "GuanacoBotOld",
+      "GuanacoBotPy",
+      "UntitledPy",
+      "OllamaFork",
+      "UntitledJava",
+      "GuanacoOld"
+    ],
+    "unknown": [
+      "MemoryHub",
+      "DevTeamAI",
+      "ClaudeArchive",
+      "RulesEngine",
+      "BrowserBot",
+      "GuanacoHome",
+      "Maxwell",
+      "PumpGuard",
+      "CryptoScout",
+      "AccountPro",
+      "ServerOps",
+      "OpsToolkit",
+      "MemoryBoost",
+      "CanopyLang",
+      "ChatTyper",
+      "DevDotfiles",
+      "FileCopy",
+      "PassOrganizer",
+      "NotebookSync",
+      "PhotoSwipe",
+      "AiderPlus",
+      "LabIS",
+      "PostureAnalyze",
+      "WellnessTrack",
+      "ProjectsView",
+      "MiniHub",
+      "MyWiki",
+      "SocialAuto",
+      "PCScripts",
+      "Etionic",
+      "SecretsVault",
+      "KeyDashOld",
+      "DriveOrganizer",
+      "PayBridge"
+    ]
+  },
+  "deployment_plan": {
+    "CoderX": {
+      "original_name": "coderx-ai-assistant",
+      "category": "cli_tools",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3006,
+        "backend": 8006,
+        "database": 5438,
+        "redis": 6385
+      },
+      "tech_stack": "rust",
+      "project_type": "cli",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "coderx-ai-assistant.guanacolabs.com",
+        "api": "api.coderx-ai-assistant.guanacolabs.com",
+        "landing": "landing.coderx-ai-assistant.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "MemoryHub": {
+      "original_name": "ai-cli-memory",
+      "category": "unknown",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3007,
+        "backend": 8007,
+        "database": 5439,
+        "redis": 6386
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "ai-cli-memory.guanacolabs.com",
+        "api": "api.ai-cli-memory.guanacolabs.com",
+        "landing": "landing.ai-cli-memory.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "ScrumBots": {
+      "original_name": "ai-scrum-team",
+      "category": "cli_tools",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3008,
+        "backend": 8008,
+        "database": 5440,
+        "redis": 6387
+      },
+      "tech_stack": "python",
+      "project_type": "cli",
+      "needs_postgres": true,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "ai-scrum-team.guanacolabs.com",
+        "api": "api.ai-scrum-team.guanacolabs.com",
+        "landing": "landing.ai-scrum-team.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "AutoScrum": {
+      "original_name": "ai-autonomous-scrum-team",
+      "category": "backend_api",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3009,
+        "backend": 8009,
+        "database": 5441,
+        "redis": 6388
+      },
+      "tech_stack": "python",
+      "project_type": "backend",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "ai-autonomous-scrum-team.guanacolabs.com",
+        "api": "api.ai-autonomous-scrum-team.guanacolabs.com",
+        "landing": "landing.ai-autonomous-scrum-team.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 256,
+        "cpu": 0.25
+      }
+    },
+    "MailGenius": {
+      "original_name": "ai-gmail-organizer",
+      "category": "backend_api",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3017,
+        "backend": 8010,
+        "database": 5442,
+        "redis": 6389
+      },
+      "tech_stack": "python",
+      "project_type": "backend",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "ai-gmail-organizer.guanacolabs.com",
+        "api": "api.ai-gmail-organizer.guanacolabs.com",
+        "landing": "landing.ai-gmail-organizer.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 256,
+        "cpu": 0.25
+      }
+    },
+    "DriverAgent": {
+      "original_name": "autonomous-driver-agent",
+      "category": "cli_tools",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3018,
+        "backend": 8011,
+        "database": 5443,
+        "redis": 6390
+      },
+      "tech_stack": "python",
+      "project_type": "cli",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "autonomous-driver-agent.guanacolabs.com",
+        "api": "api.autonomous-driver-agent.guanacolabs.com",
+        "landing": "landing.autonomous-driver-agent.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "ClaudeFlow": {
+      "original_name": "claude-agent-poc",
+      "category": "backend_api",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3019,
+        "backend": 8012,
+        "database": 5444,
+        "redis": 6391
+      },
+      "tech_stack": "python",
+      "project_type": "backend",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "claude-agent-poc.guanacolabs.com",
+        "api": "api.claude-agent-poc.guanacolabs.com",
+        "landing": "landing.claude-agent-poc.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 256,
+        "cpu": 0.25
+      }
+    },
+    "ResearchBot": {
+      "original_name": "ai-investigador-system",
+      "category": "backend_api",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3020,
+        "backend": 8013,
+        "database": 5445,
+        "redis": 6392
+      },
+      "tech_stack": "python",
+      "project_type": "backend",
+      "needs_postgres": true,
+      "needs_redis": true,
+      "has_dockerfile": true,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "ai-investigador-system.guanacolabs.com",
+        "api": "api.ai-investigador-system.guanacolabs.com",
+        "landing": "landing.ai-investigador-system.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 256,
+        "cpu": 0.25
+      }
+    },
+    "DevTeamAI": {
+      "original_name": "ai-dev-team",
+      "category": "unknown",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3021,
+        "backend": 8014,
+        "database": 5446,
+        "redis": 6393
+      },
+      "tech_stack": "node.js",
+      "project_type": "",
+      "needs_postgres": true,
+      "needs_redis": true,
+      "has_dockerfile": false,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "ai-dev-team.guanacolabs.com",
+        "api": "api.ai-dev-team.guanacolabs.com",
+        "landing": "landing.ai-dev-team.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "ClaudeConfig": {
+      "original_name": "mcp-claude-global-config",
+      "category": "mcp_servers",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3024,
+        "backend": 8015,
+        "database": 5447,
+        "redis": 6394
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "mcp-claude-global-config.guanacolabs.com",
+        "api": "api.mcp-claude-global-config.guanacolabs.com",
+        "landing": "landing.mcp-claude-global-config.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "ClaudeArchive": {
+      "original_name": "claude-conversations-archive",
+      "category": "unknown",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3025,
+        "backend": 8016,
+        "database": 5448,
+        "redis": 6395
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "claude-conversations-archive.guanacolabs.com",
+        "api": "api.claude-conversations-archive.guanacolabs.com",
+        "landing": "landing.claude-conversations-archive.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "RulesEngine": {
+      "original_name": "ai-business-rules-engine",
+      "category": "unknown",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3026,
+        "backend": 8017,
+        "database": 5449,
+        "redis": 6396
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "ai-business-rules-engine.guanacolabs.com",
+        "api": "api.ai-business-rules-engine.guanacolabs.com",
+        "landing": "landing.ai-business-rules-engine.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "TermOrchestra": {
+      "original_name": "ai-iterm2-orchestrator",
+      "category": "backend_api",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3027,
+        "backend": 8018,
+        "database": 5450,
+        "redis": 6397
+      },
+      "tech_stack": "python",
+      "project_type": "backend",
+      "needs_postgres": true,
+      "needs_redis": true,
+      "has_dockerfile": true,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "ai-iterm2-orchestrator.guanacolabs.com",
+        "api": "api.ai-iterm2-orchestrator.guanacolabs.com",
+        "landing": "landing.ai-iterm2-orchestrator.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 256,
+        "cpu": 0.25
+      }
+    },
+    "VaultConnect": {
+      "original_name": "guanaco-bitwarden-mcp",
+      "category": "mcp_servers",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3028,
+        "backend": 8019,
+        "database": 5451,
+        "redis": 6398
+      },
+      "tech_stack": "node.js",
+      "project_type": "",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "guanaco-bitwarden-mcp.guanacolabs.com",
+        "api": "api.guanaco-bitwarden-mcp.guanacolabs.com",
+        "landing": "landing.guanaco-bitwarden-mcp.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "MailBridge": {
+      "original_name": "mcp-gmail",
+      "category": "mcp_servers",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3029,
+        "backend": 8020,
+        "database": 5452,
+        "redis": 6399
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "mcp-gmail.guanacolabs.com",
+        "api": "api.mcp-gmail.guanacolabs.com",
+        "landing": "landing.mcp-gmail.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "ScribeBridge": {
+      "original_name": "mcp-turboscribe",
+      "category": "mcp_servers",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3030,
+        "backend": 8021,
+        "database": 5453,
+        "redis": 6400
+      },
+      "tech_stack": "python",
+      "project_type": "cli",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "mcp-turboscribe.guanacolabs.com",
+        "api": "api.mcp-turboscribe.guanacolabs.com",
+        "landing": "landing.mcp-turboscribe.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "VaultPro": {
+      "original_name": "mcp-bitwarden-enhanced",
+      "category": "mcp_servers",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3031,
+        "backend": 8022,
+        "database": 5454,
+        "redis": 6401
+      },
+      "tech_stack": "node.js",
+      "project_type": "",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "mcp-bitwarden-enhanced.guanacolabs.com",
+        "api": "api.mcp-bitwarden-enhanced.guanacolabs.com",
+        "landing": "landing.mcp-bitwarden-enhanced.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "ArchiveBridge": {
+      "original_name": "mcp-annas-archive",
+      "category": "mcp_servers",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3032,
+        "backend": 8023,
+        "database": 5455,
+        "redis": 6402
+      },
+      "tech_stack": "python",
+      "project_type": "cli",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "mcp-annas-archive.guanacolabs.com",
+        "api": "api.mcp-annas-archive.guanacolabs.com",
+        "landing": "landing.mcp-annas-archive.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "WhatsGuard": {
+      "original_name": "mcp-whatsapp-secure",
+      "category": "mcp_servers",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3033,
+        "backend": 8024,
+        "database": 5456,
+        "redis": 6403
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "mcp-whatsapp-secure.guanacolabs.com",
+        "api": "api.mcp-whatsapp-secure.guanacolabs.com",
+        "landing": "landing.mcp-whatsapp-secure.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "BrowserBot": {
+      "original_name": "web-agent",
+      "category": "unknown",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3034,
+        "backend": 8025,
+        "database": 5457,
+        "redis": 6404
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "web-agent.guanacolabs.com",
+        "api": "api.web-agent.guanacolabs.com",
+        "landing": "landing.web-agent.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "GuanacoHome": {
+      "original_name": "guanacolabs-landing",
+      "category": "unknown",
+      "priority": "critical",
+      "status": "in-use",
+      "ports": {
+        "frontend": 3000,
+        "backend": 8026,
+        "database": 5458,
+        "redis": 6405
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "guanacolabs-landing.guanacolabs.com",
+        "api": "api.guanacolabs-landing.guanacolabs.com",
+        "landing": "landing.guanacolabs-landing.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "GuanacoWeb": {
+      "original_name": "company-guanacolabs-website",
+      "category": "fullstack_web",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3035,
+        "backend": 8027,
+        "database": 5459,
+        "redis": 6406
+      },
+      "tech_stack": "react",
+      "project_type": "frontend",
+      "needs_postgres": true,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "company-guanacolabs-website.guanacolabs.com",
+        "api": "api.company-guanacolabs-website.guanacolabs.com",
+        "landing": "landing.company-guanacolabs-website.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 512,
+        "cpu": 0.5
+      }
+    },
+    "AutoScribe": {
+      "original_name": "web-autoscribe",
+      "category": "fullstack_web",
+      "priority": "critical",
+      "status": "in-use",
+      "ports": {
+        "frontend": 13556,
+        "backend": 8028,
+        "database": 5432,
+        "redis": 6407
+      },
+      "tech_stack": "next.js",
+      "project_type": "frontend",
+      "needs_postgres": true,
+      "needs_redis": true,
+      "has_dockerfile": true,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "web-autoscribe.guanacolabs.com",
+        "api": "api.web-autoscribe.guanacolabs.com",
+        "landing": "landing.web-autoscribe.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 512,
+        "cpu": 0.5
+      }
+    },
+    "FiremanDev": {
+      "original_name": "web-fireman-developer",
+      "category": "fullstack_web",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3042,
+        "backend": 8029,
+        "database": 5460,
+        "redis": 6408
+      },
+      "tech_stack": "react",
+      "project_type": "frontend",
+      "needs_postgres": true,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "web-fireman-developer.guanacolabs.com",
+        "api": "api.web-fireman-developer.guanacolabs.com",
+        "landing": "landing.web-fireman-developer.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 512,
+        "cpu": 0.5
+      }
+    },
+    "CodeFireman": {
+      "original_name": "web-codefireman",
+      "category": "fullstack_web",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3043,
+        "backend": 8030,
+        "database": 5461,
+        "redis": 6409
+      },
+      "tech_stack": "react",
+      "project_type": "frontend",
+      "needs_postgres": true,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "web-codefireman.guanacolabs.com",
+        "api": "api.web-codefireman.guanacolabs.com",
+        "landing": "landing.web-codefireman.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 512,
+        "cpu": 0.5
+      }
+    },
+    "Maxwell": {
+      "original_name": "web-maxwell",
+      "category": "unknown",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3048,
+        "backend": 8031,
+        "database": 5462,
+        "redis": 6410
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "web-maxwell.guanacolabs.com",
+        "api": "api.web-maxwell.guanacolabs.com",
+        "landing": "landing.web-maxwell.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "PumpGuard": {
+      "original_name": "crypto-pump-crash-system",
+      "category": "unknown",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3049,
+        "backend": 8032,
+        "database": 5463,
+        "redis": 6411
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "crypto-pump-crash-system.guanacolabs.com",
+        "api": "api.crypto-pump-crash-system.guanacolabs.com",
+        "landing": "landing.crypto-pump-crash-system.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "CryptoScout": {
+      "original_name": "crypto-research-agents",
+      "category": "unknown",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3050,
+        "backend": 8033,
+        "database": 5464,
+        "redis": 6412
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "crypto-research-agents.guanacolabs.com",
+        "api": "api.crypto-research-agents.guanacolabs.com",
+        "landing": "landing.crypto-research-agents.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "TradeBook": {
+      "original_name": "crypto-trading-playbook",
+      "category": "cli_tools",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3051,
+        "backend": 8034,
+        "database": 5465,
+        "redis": 6413
+      },
+      "tech_stack": "python",
+      "project_type": "cli",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "crypto-trading-playbook.guanacolabs.com",
+        "api": "api.crypto-trading-playbook.guanacolabs.com",
+        "landing": "landing.crypto-trading-playbook.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "TradeScripts": {
+      "original_name": "doc-tradinglatino-transcripts",
+      "category": "cli_tools",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3052,
+        "backend": 8035,
+        "database": 5466,
+        "redis": 6414
+      },
+      "tech_stack": "python",
+      "project_type": "cli",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "doc-tradinglatino-transcripts.guanacolabs.com",
+        "api": "api.doc-tradinglatino-transcripts.guanacolabs.com",
+        "landing": "landing.doc-tradinglatino-transcripts.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "MoneyMaker": {
+      "original_name": "money-maker-system",
+      "category": "cli_tools",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3053,
+        "backend": 8036,
+        "database": 5467,
+        "redis": 6415
+      },
+      "tech_stack": "python",
+      "project_type": "cli",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "money-maker-system.guanacolabs.com",
+        "api": "api.money-maker-system.guanacolabs.com",
+        "landing": "landing.money-maker-system.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "StrategyLab": {
+      "original_name": "trading-strategy",
+      "category": "fullstack_web",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3054,
+        "backend": 8037,
+        "database": 5468,
+        "redis": 6416
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "trading-strategy.guanacolabs.com",
+        "api": "api.trading-strategy.guanacolabs.com",
+        "landing": "landing.trading-strategy.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 512,
+        "cpu": 0.5
+      }
+    },
+    "ArbitrageBot": {
+      "original_name": "fin-crypto-arbitrage-bot",
+      "category": "backend_api",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3055,
+        "backend": 8038,
+        "database": 5469,
+        "redis": 6417
+      },
+      "tech_stack": "java",
+      "project_type": "backend",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "fin-crypto-arbitrage-bot.guanacolabs.com",
+        "api": "api.fin-crypto-arbitrage-bot.guanacolabs.com",
+        "landing": "landing.fin-crypto-arbitrage-bot.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 256,
+        "cpu": 0.25
+      }
+    },
+    "FintelliView": {
+      "original_name": "fin-fintelliview",
+      "category": "backend_api",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3056,
+        "backend": 8039,
+        "database": 5470,
+        "redis": 6418
+      },
+      "tech_stack": "java",
+      "project_type": "backend",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "fin-fintelliview.guanacolabs.com",
+        "api": "api.fin-fintelliview.guanacolabs.com",
+        "landing": "landing.fin-fintelliview.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 256,
+        "cpu": 0.25
+      }
+    },
+    "AccountPro": {
+      "original_name": "accountant-app",
+      "category": "unknown",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3057,
+        "backend": 8040,
+        "database": 5471,
+        "redis": 6419
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "accountant-app.guanacolabs.com",
+        "api": "api.accountant-app.guanacolabs.com",
+        "landing": "landing.accountant-app.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "ServerOps": {
+      "original_name": "ops-server-infrastructure",
+      "category": "unknown",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3058,
+        "backend": 8041,
+        "database": 5472,
+        "redis": 6420
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "ops-server-infrastructure.guanacolabs.com",
+        "api": "api.ops-server-infrastructure.guanacolabs.com",
+        "landing": "landing.ops-server-infrastructure.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "OpsToolkit": {
+      "original_name": "ops-devops-toolkit",
+      "category": "unknown",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3059,
+        "backend": 8042,
+        "database": 5473,
+        "redis": 6421
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "ops-devops-toolkit.guanacolabs.com",
+        "api": "api.ops-devops-toolkit.guanacolabs.com",
+        "landing": "landing.ops-devops-toolkit.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "MemoryBoost": {
+      "original_name": "ops-memory-optimizer",
+      "category": "unknown",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3060,
+        "backend": 8043,
+        "database": 5474,
+        "redis": 6422
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "ops-memory-optimizer.guanacolabs.com",
+        "api": "api.ops-memory-optimizer.guanacolabs.com",
+        "landing": "landing.ops-memory-optimizer.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "CanopyLang": {
+      "original_name": "canopy-lang",
+      "category": "unknown",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3061,
+        "backend": 8044,
+        "database": 5475,
+        "redis": 6423
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "canopy-lang.guanacolabs.com",
+        "api": "api.canopy-lang.guanacolabs.com",
+        "landing": "landing.canopy-lang.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "PassRotate": {
+      "original_name": "password-rotation-game",
+      "category": "backend_api",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3062,
+        "backend": 8045,
+        "database": 5476,
+        "redis": 6424
+      },
+      "tech_stack": "express",
+      "project_type": "backend",
+      "needs_postgres": true,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "password-rotation-game.guanacolabs.com",
+        "api": "api.password-rotation-game.guanacolabs.com",
+        "landing": "landing.password-rotation-game.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 256,
+        "cpu": 0.25
+      }
+    },
+    "ChatTyper": {
+      "original_name": "dev-auto-chat-typer",
+      "category": "unknown",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3063,
+        "backend": 8046,
+        "database": 5477,
+        "redis": 6425
+      },
+      "tech_stack": "node.js",
+      "project_type": "",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "dev-auto-chat-typer.guanacolabs.com",
+        "api": "api.dev-auto-chat-typer.guanacolabs.com",
+        "landing": "landing.dev-auto-chat-typer.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "DevDotfiles": {
+      "original_name": "dev-dotfiles",
+      "category": "unknown",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3064,
+        "backend": 8047,
+        "database": 5478,
+        "redis": 6426
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "dev-dotfiles.guanacolabs.com",
+        "api": "api.dev-dotfiles.guanacolabs.com",
+        "landing": "landing.dev-dotfiles.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "FileCopy": {
+      "original_name": "dev-intellij-copy-files-plugin",
+      "category": "unknown",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3065,
+        "backend": 8048,
+        "database": 5479,
+        "redis": 6427
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "dev-intellij-copy-files-plugin.guanacolabs.com",
+        "api": "api.dev-intellij-copy-files-plugin.guanacolabs.com",
+        "landing": "landing.dev-intellij-copy-files-plugin.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "OCRTester": {
+      "original_name": "dev-ocr-testing-tool",
+      "category": "fullstack_web",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3066,
+        "backend": 8049,
+        "database": 5480,
+        "redis": 6428
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "dev-ocr-testing-tool.guanacolabs.com",
+        "api": "api.dev-ocr-testing-tool.guanacolabs.com",
+        "landing": "landing.dev-ocr-testing-tool.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 512,
+        "cpu": 0.5
+      }
+    },
+    "QRGen": {
+      "original_name": "dev-qr-code-generator",
+      "category": "cli_tools",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3067,
+        "backend": 8050,
+        "database": 5481,
+        "redis": 6429
+      },
+      "tech_stack": "python",
+      "project_type": "cli",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "dev-qr-code-generator.guanacolabs.com",
+        "api": "api.dev-qr-code-generator.guanacolabs.com",
+        "landing": "landing.dev-qr-code-generator.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "PassOrganizer": {
+      "original_name": "password-organizer",
+      "category": "unknown",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3068,
+        "backend": 8051,
+        "database": 5482,
+        "redis": 6430
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "password-organizer.guanacolabs.com",
+        "api": "api.password-organizer.guanacolabs.com",
+        "landing": "landing.password-organizer.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "NotebookSync": {
+      "original_name": "dev-notebooklm-bulk-importer",
+      "category": "unknown",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3069,
+        "backend": 8052,
+        "database": 5483,
+        "redis": 6431
+      },
+      "tech_stack": "node.js",
+      "project_type": "",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "dev-notebooklm-bulk-importer.guanacolabs.com",
+        "api": "api.dev-notebooklm-bulk-importer.guanacolabs.com",
+        "landing": "landing.dev-notebooklm-bulk-importer.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "SideDoc": {
+      "original_name": "dev-sidedoc-app",
+      "category": "frontend_only",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3070,
+        "backend": 8053,
+        "database": 5484,
+        "redis": 6432
+      },
+      "tech_stack": "next.js",
+      "project_type": "frontend",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "dev-sidedoc-app.guanacolabs.com",
+        "api": "api.dev-sidedoc-app.guanacolabs.com",
+        "landing": "landing.dev-sidedoc-app.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 128,
+        "cpu": 0.1
+      }
+    },
+    "PhotoSwipe": {
+      "original_name": "tools-photo-swiper",
+      "category": "unknown",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3071,
+        "backend": 8054,
+        "database": 5485,
+        "redis": 6433
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "tools-photo-swiper.guanacolabs.com",
+        "api": "api.tools-photo-swiper.guanacolabs.com",
+        "landing": "landing.tools-photo-swiper.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "AiderPlus": {
+      "original_name": "aider-improved",
+      "category": "unknown",
+      "priority": "high",
+      "status": "in-use",
+      "ports": {
+        "frontend": 3038,
+        "backend": 8055,
+        "database": 5486,
+        "redis": 6434
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "aider-improved.guanacolabs.com",
+        "api": "api.aider-improved.guanacolabs.com",
+        "landing": "landing.aider-improved.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "FeedSync": {
+      "original_name": "guanacolabs-public-feed-sync",
+      "category": "cli_tools",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3072,
+        "backend": 8056,
+        "database": 5487,
+        "redis": 6435
+      },
+      "tech_stack": "python",
+      "project_type": "cli",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "guanacolabs-public-feed-sync.guanacolabs.com",
+        "api": "api.guanacolabs-public-feed-sync.guanacolabs.com",
+        "landing": "landing.guanacolabs-public-feed-sync.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "ProjectHub": {
+      "original_name": "company-guanacolabs-projects-hub",
+      "category": "fullstack_web",
+      "priority": "critical",
+      "status": "in-use",
+      "ports": {
+        "frontend": 3001,
+        "backend": 8001,
+        "database": 5488,
+        "redis": 6436
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "company-guanacolabs-projects-hub.guanacolabs.com",
+        "api": "api.company-guanacolabs-projects-hub.guanacolabs.com",
+        "landing": "landing.company-guanacolabs-projects-hub.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 512,
+        "cpu": 0.5
+      }
+    },
+    "GuanacoPlatfm": {
+      "original_name": "platform-guanaco-main",
+      "category": "fullstack_web",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3073,
+        "backend": 8057,
+        "database": 5489,
+        "redis": 6437
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "platform-guanaco-main.guanacolabs.com",
+        "api": "api.platform-guanaco-main.guanacolabs.com",
+        "landing": "landing.platform-guanaco-main.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 512,
+        "cpu": 0.5
+      }
+    },
+    "GuanacoBot": {
+      "original_name": "company-guanacolabs-telegram-bot",
+      "category": "cli_tools",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3074,
+        "backend": 8058,
+        "database": 5490,
+        "redis": 6438
+      },
+      "tech_stack": "python",
+      "project_type": "cli",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "company-guanacolabs-telegram-bot.guanacolabs.com",
+        "api": "api.company-guanacolabs-telegram-bot.guanacolabs.com",
+        "landing": "landing.company-guanacolabs-telegram-bot.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "BotFactory": {
+      "original_name": "botfactory-saas",
+      "category": "backend_api",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3075,
+        "backend": 8059,
+        "database": 5491,
+        "redis": 6439
+      },
+      "tech_stack": "express",
+      "project_type": "backend",
+      "needs_postgres": true,
+      "needs_redis": true,
+      "has_dockerfile": true,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "botfactory-saas.guanacolabs.com",
+        "api": "api.botfactory-saas.guanacolabs.com",
+        "landing": "landing.botfactory-saas.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 256,
+        "cpu": 0.25
+      }
+    },
+    "DeployHub": {
+      "original_name": "platform-deployer",
+      "category": "fullstack_web",
+      "priority": "critical",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3076,
+        "backend": 8060,
+        "database": 5492,
+        "redis": 6440
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "platform-deployer.guanacolabs.com",
+        "api": "api.platform-deployer.guanacolabs.com",
+        "landing": "landing.platform-deployer.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 512,
+        "cpu": 0.5
+      }
+    },
+    "AgroPlatform": {
+      "original_name": "agro-platform",
+      "category": "fullstack_web",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3077,
+        "backend": 8061,
+        "database": 5493,
+        "redis": 6441
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "agro-platform.guanacolabs.com",
+        "api": "api.agro-platform.guanacolabs.com",
+        "landing": "landing.agro-platform.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 512,
+        "cpu": 0.5
+      }
+    },
+    "FarmManager": {
+      "original_name": "agro-management-app",
+      "category": "fullstack_web",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3078,
+        "backend": 8062,
+        "database": 5494,
+        "redis": 6442
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "agro-management-app.guanacolabs.com",
+        "api": "api.agro-management-app.guanacolabs.com",
+        "landing": "landing.agro-management-app.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 512,
+        "cpu": 0.5
+      }
+    },
+    "LabIS": {
+      "original_name": "med-matlab-labis",
+      "category": "unknown",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3079,
+        "backend": 8063,
+        "database": 5495,
+        "redis": 6443
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "med-matlab-labis.guanacolabs.com",
+        "api": "api.med-matlab-labis.guanacolabs.com",
+        "landing": "landing.med-matlab-labis.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "PostureAnalyze": {
+      "original_name": "med-posturography-systems",
+      "category": "unknown",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3080,
+        "backend": 8064,
+        "database": 5496,
+        "redis": 6444
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "med-posturography-systems.guanacolabs.com",
+        "api": "api.med-posturography-systems.guanacolabs.com",
+        "landing": "landing.med-posturography-systems.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "OrthoPosture": {
+      "original_name": "orthoposture",
+      "category": "frontend_only",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3081,
+        "backend": 8065,
+        "database": 5497,
+        "redis": 6445
+      },
+      "tech_stack": "next.js",
+      "project_type": "frontend",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "orthoposture.guanacolabs.com",
+        "api": "api.orthoposture.guanacolabs.com",
+        "landing": "landing.orthoposture.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 128,
+        "cpu": 0.1
+      }
+    },
+    "WellnessTrack": {
+      "original_name": "wellness-tracker-app",
+      "category": "unknown",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3082,
+        "backend": 8066,
+        "database": 5498,
+        "redis": 6446
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "wellness-tracker-app.guanacolabs.com",
+        "api": "api.wellness-tracker-app.guanacolabs.com",
+        "landing": "landing.wellness-tracker-app.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "DocMa": {
+      "original_name": "doc-docma-monorepo",
+      "category": "backend_api",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3083,
+        "backend": 8067,
+        "database": 5499,
+        "redis": 6447
+      },
+      "tech_stack": "java",
+      "project_type": "backend",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "doc-docma-monorepo.guanacolabs.com",
+        "api": "api.doc-docma-monorepo.guanacolabs.com",
+        "landing": "landing.doc-docma-monorepo.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 256,
+        "cpu": 0.25
+      }
+    },
+    "ProjectsView": {
+      "original_name": "doc-projects-overview",
+      "category": "unknown",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3084,
+        "backend": 8068,
+        "database": 5500,
+        "redis": 6448
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "doc-projects-overview.guanacolabs.com",
+        "api": "api.doc-projects-overview.guanacolabs.com",
+        "landing": "landing.doc-projects-overview.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "ArtisDocNext": {
+      "original_name": "doc-artisdoc-java17",
+      "category": "fullstack_web",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3085,
+        "backend": 8069,
+        "database": 5501,
+        "redis": 6449
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "doc-artisdoc-java17.guanacolabs.com",
+        "api": "api.doc-artisdoc-java17.guanacolabs.com",
+        "landing": "landing.doc-artisdoc-java17.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 512,
+        "cpu": 0.5
+      }
+    },
+    "ArtisDoc": {
+      "original_name": "doc-artisdoc-monorepo",
+      "category": "fullstack_web",
+      "priority": "critical",
+      "status": "in-use",
+      "ports": {
+        "frontend": 9000,
+        "backend": 9090,
+        "database": 5434,
+        "redis": 6381
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "doc-artisdoc-monorepo.guanacolabs.com",
+        "api": "api.doc-artisdoc-monorepo.guanacolabs.com",
+        "landing": "landing.doc-artisdoc-monorepo.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 512,
+        "cpu": 0.5
+      }
+    },
+    "MiniHub": {
+      "original_name": "mini-projects-collection",
+      "category": "unknown",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3086,
+        "backend": 8070,
+        "database": 5502,
+        "redis": 6450
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "mini-projects-collection.guanacolabs.com",
+        "api": "api.mini-projects-collection.guanacolabs.com",
+        "landing": "landing.mini-projects-collection.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "GuanacoBotOld": {
+      "original_name": "guanacobot-app-kotlin",
+      "category": "archived",
+      "priority": "archived",
+      "status": "archived",
+      "ports": {
+        "frontend": 3087,
+        "backend": 8071,
+        "database": 5503,
+        "redis": 6451
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "guanacobot-app-kotlin.guanacolabs.com",
+        "api": "api.guanacobot-app-kotlin.guanacolabs.com",
+        "landing": "landing.guanacobot-app-kotlin.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "GuanacoBotPy": {
+      "original_name": "guanacobot-python",
+      "category": "archived",
+      "priority": "archived",
+      "status": "archived",
+      "ports": {
+        "frontend": 3088,
+        "backend": 8072,
+        "database": 5504,
+        "redis": 6452
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "guanacobot-python.guanacolabs.com",
+        "api": "api.guanacobot-python.guanacolabs.com",
+        "landing": "landing.guanacobot-python.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "UntitledPy": {
+      "original_name": "untitled-python-project",
+      "category": "archived",
+      "priority": "archived",
+      "status": "archived",
+      "ports": {
+        "frontend": 3089,
+        "backend": 8073,
+        "database": 5505,
+        "redis": 6453
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "untitled-python-project.guanacolabs.com",
+        "api": "api.untitled-python-project.guanacolabs.com",
+        "landing": "landing.untitled-python-project.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "OllamaFork": {
+      "original_name": "ollama-custom-fork",
+      "category": "archived",
+      "priority": "archived",
+      "status": "archived",
+      "ports": {
+        "frontend": 3090,
+        "backend": 8074,
+        "database": 5506,
+        "redis": 6454
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "ollama-custom-fork.guanacolabs.com",
+        "api": "api.ollama-custom-fork.guanacolabs.com",
+        "landing": "landing.ollama-custom-fork.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "UntitledJava": {
+      "original_name": "untitled-java-project",
+      "category": "archived",
+      "priority": "archived",
+      "status": "archived",
+      "ports": {
+        "frontend": 3091,
+        "backend": 8075,
+        "database": 5507,
+        "redis": 6455
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "untitled-java-project.guanacolabs.com",
+        "api": "api.untitled-java-project.guanacolabs.com",
+        "landing": "landing.untitled-java-project.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "GuanacoOld": {
+      "original_name": "guanaco-labs-old-version",
+      "category": "archived",
+      "priority": "archived",
+      "status": "archived",
+      "ports": {
+        "frontend": 3092,
+        "backend": 8076,
+        "database": 5508,
+        "redis": 6456
+      },
+      "tech_stack": "next.js",
+      "project_type": "frontend",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "guanaco-labs-old-version.guanacolabs.com",
+        "api": "api.guanaco-labs-old-version.guanacolabs.com",
+        "landing": "landing.guanaco-labs-old-version.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "MyWiki": {
+      "original_name": "mi-wiki",
+      "category": "unknown",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3093,
+        "backend": 8077,
+        "database": 5509,
+        "redis": 6457
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "mi-wiki.guanacolabs.com",
+        "api": "api.mi-wiki.guanacolabs.com",
+        "landing": "landing.mi-wiki.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "SocialAuto": {
+      "original_name": "social-content-automation",
+      "category": "unknown",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3094,
+        "backend": 8078,
+        "database": 5510,
+        "redis": 6458
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "social-content-automation.guanacolabs.com",
+        "api": "api.social-content-automation.guanacolabs.com",
+        "landing": "landing.social-content-automation.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "PCScripts": {
+      "original_name": "pc-scripts",
+      "category": "unknown",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3095,
+        "backend": 8079,
+        "database": 5511,
+        "redis": 6459
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "pc-scripts.guanacolabs.com",
+        "api": "api.pc-scripts.guanacolabs.com",
+        "landing": "landing.pc-scripts.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "Etionic": {
+      "original_name": "etionic-consulting",
+      "category": "unknown",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3096,
+        "backend": 8080,
+        "database": 5512,
+        "redis": 6460
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "etionic-consulting.guanacolabs.com",
+        "api": "api.etionic-consulting.guanacolabs.com",
+        "landing": "landing.etionic-consulting.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "NautaChallenge": {
+      "original_name": "challenge-nauta",
+      "category": "backend_api",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3097,
+        "backend": 8081,
+        "database": 5513,
+        "redis": 6461
+      },
+      "tech_stack": "java",
+      "project_type": "backend",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "challenge-nauta.guanacolabs.com",
+        "api": "api.challenge-nauta.guanacolabs.com",
+        "landing": "landing.challenge-nauta.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 256,
+        "cpu": 0.25
+      }
+    },
+    "SecretsVault": {
+      "original_name": "guanaco-secrets-vault",
+      "category": "unknown",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3098,
+        "backend": 8082,
+        "database": 5514,
+        "redis": 6462
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "guanaco-secrets-vault.guanacolabs.com",
+        "api": "api.guanaco-secrets-vault.guanacolabs.com",
+        "landing": "landing.guanaco-secrets-vault.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "KeyDashboard": {
+      "original_name": "api-keys-dashboard-nextjs",
+      "category": "fullstack_web",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3099,
+        "backend": 8083,
+        "database": 5515,
+        "redis": 6463
+      },
+      "tech_stack": "next.js",
+      "project_type": "frontend",
+      "needs_postgres": true,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": true,
+      "subdomains": {
+        "main": "api-keys-dashboard-nextjs.guanacolabs.com",
+        "api": "api.api-keys-dashboard-nextjs.guanacolabs.com",
+        "landing": "landing.api-keys-dashboard-nextjs.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 512,
+        "cpu": 0.5
+      }
+    },
+    "KeyDashOld": {
+      "original_name": "api-keys-dashboard",
+      "category": "unknown",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3101,
+        "backend": 8084,
+        "database": 5516,
+        "redis": 6464
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": true,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "api-keys-dashboard.guanacolabs.com",
+        "api": "api.api-keys-dashboard.guanacolabs.com",
+        "landing": "landing.api-keys-dashboard.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "DriveOrganizer": {
+      "original_name": "gdrive-organizer",
+      "category": "unknown",
+      "priority": "medium",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3102,
+        "backend": 8085,
+        "database": 5517,
+        "redis": 6465
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "gdrive-organizer.guanacolabs.com",
+        "api": "api.gdrive-organizer.guanacolabs.com",
+        "landing": "landing.gdrive-organizer.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    },
+    "SignalsLab": {
+      "original_name": "senales-interactivo",
+      "category": "frontend_only",
+      "priority": "low",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3103,
+        "backend": 8086,
+        "database": 5518,
+        "redis": 6466
+      },
+      "tech_stack": "react",
+      "project_type": "frontend",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "senales-interactivo.guanacolabs.com",
+        "api": "api.senales-interactivo.guanacolabs.com",
+        "landing": "landing.senales-interactivo.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 128,
+        "cpu": 0.1
+      }
+    },
+    "PayBridge": {
+      "original_name": "middleware-mercadopago",
+      "category": "unknown",
+      "priority": "high",
+      "status": "reserved",
+      "ports": {
+        "frontend": 3104,
+        "backend": 8087,
+        "database": 5519,
+        "redis": 6467
+      },
+      "tech_stack": "unknown",
+      "project_type": "unknown",
+      "needs_postgres": false,
+      "needs_redis": false,
+      "has_dockerfile": false,
+      "has_docker_compose": false,
+      "subdomains": {
+        "main": "middleware-mercadopago.guanacolabs.com",
+        "api": "api.middleware-mercadopago.guanacolabs.com",
+        "landing": "landing.middleware-mercadopago.guanacolabs.com"
+      },
+      "resource_estimate": {
+        "ram_mb": 64,
+        "cpu": 0.05
+      }
+    }
+  },
+  "resource_breakdown": {
+    "cli_tools": {
+      "ram_mb": 576,
+      "cpu": 0.44999999999999996,
+      "count": 9
+    },
+    "unknown": {
+      "ram_mb": 2176,
+      "cpu": 1.7000000000000008,
+      "count": 34
+    },
+    "backend_api": {
+      "ram_mb": 2816,
+      "cpu": 2.75,
+      "count": 11
+    },
+    "mcp_servers": {
+      "ram_mb": 448,
+      "cpu": 0.35,
+      "count": 7
+    },
+    "fullstack_web": {
+      "ram_mb": 7168,
+      "cpu": 7.0,
+      "count": 14
+    },
+    "frontend_only": {
+      "ram_mb": 384,
+      "cpu": 0.30000000000000004,
+      "count": 3
+    },
+    "archived": {
+      "ram_mb": 384,
+      "cpu": 0.3,
+      "count": 6
+    }
+  },
+  "shared_databases": {
+    "postgres_main": {
+      "port": 5432,
+      "projects": [
+        "GuanacoWeb",
+        "AutoScribe",
+        "FiremanDev",
+        "CodeFireman",
+        "PassRotate",
+        "BotFactory",
+        "KeyDashboard"
+      ]
+    },
+    "postgres_ai": {
+      "port": 5433,
+      "projects": [
+        "ScrumBots",
+        "ResearchBot",
+        "DevTeamAI",
+        "TermOrchestra"
+      ]
+    },
+    "postgres_finance": {
+      "port": 5434,
+      "projects": []
+    },
+    "redis_main": {
+      "port": 6379,
+      "projects": [
+        "AutoScribe",
+        "BotFactory"
+      ]
+    },
+    "redis_ai": {
+      "port": 6380,
+      "projects": [
+        "ResearchBot",
+        "DevTeamAI",
+        "TermOrchestra"
+      ]
+    }
+  }
+}
