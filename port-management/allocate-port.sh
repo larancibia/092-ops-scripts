@@ -26,19 +26,19 @@ NC='\033[0m' # No Color
 
 # Function to print colored messages
 log_info() {
-    echo -e "${BLUE}[INFO]${NC} $1"
+    echo -e "${BLUE}[INFO]${NC} $1" >&2
 }
 
 log_success() {
-    echo -e "${GREEN}[SUCCESS]${NC} $1"
+    echo -e "${GREEN}[SUCCESS]${NC} $1" >&2
 }
 
 log_warning() {
-    echo -e "${YELLOW}[WARNING]${NC} $1"
+    echo -e "${YELLOW}[WARNING]${NC} $1" >&2
 }
 
 log_error() {
-    echo -e "${RED}[ERROR]${NC} $1"
+    echo -e "${RED}[ERROR]${NC} $1" >&2
 }
 
 # Check if registry file exists
@@ -59,19 +59,19 @@ PORT_TYPE="${2:-}"
 PRIORITY="${3:-medium}"
 
 if [ -z "$PROJECT_NAME" ] || [ -z "$PORT_TYPE" ]; then
-    echo "Usage: $0 <project-name> <port-type> [priority]"
-    echo ""
-    echo "Port Types:"
-    echo "  frontend      - Web frontends (3000-3199)"
-    echo "  backend       - Backend APIs (8000-8199)"
-    echo "  service       - Microservices (9000-9199)"
-    echo "  internal      - Internal tools (10000-10199)"
-    echo "  postgresql    - PostgreSQL (5432+)"
-    echo "  mysql         - MySQL (3306+)"
-    echo "  redis         - Redis (6379+)"
-    echo "  mongodb       - MongoDB (27017+)"
-    echo ""
-    echo "Priority levels: critical, high, medium, low"
+    echo "Usage: $0 <project-name> <port-type> [priority]" >&2
+    echo "" >&2
+    echo "Port Types:" >&2
+    echo "  frontend      - Web frontends (3000-3199)" >&2
+    echo "  backend       - Backend APIs (8000-8199)" >&2
+    echo "  service       - Microservices (9000-9199)" >&2
+    echo "  internal      - Internal tools (10000-10199)" >&2
+    echo "  postgresql    - PostgreSQL (5432+)" >&2
+    echo "  mysql         - MySQL (3306+)" >&2
+    echo "  redis         - Redis (6379+)" >&2
+    echo "  mongodb       - MongoDB (27017+)" >&2
+    echo "" >&2
+    echo "Priority levels: critical, high, medium, low" >&2
     exit 1
 fi
 
@@ -99,7 +99,7 @@ find_next_port() {
         ' "$REGISTRY_FILE")
 
         # Check if port is actually listening on the system
-        local port_listening=$(ss -tlnp 2>/dev/null | grep -c ":$current_port " || echo "0")
+        local port_listening=$(ss -tlnp 2>/dev/null | grep -c ":$current_port " || true)
 
         if [ "$in_registry" == "false" ] && [ "$in_reserved" == "false" ] && [ "$port_listening" == "0" ]; then
             echo $current_port
@@ -131,7 +131,7 @@ get_next_database_port() {
             any(. == $port)
         ' "$REGISTRY_FILE")
 
-        local port_listening=$(ss -tlnp 2>/dev/null | grep -c ":$candidate_port " || echo "0")
+        local port_listening=$(ss -tlnp 2>/dev/null | grep -c ":$candidate_port " || true)
 
         if [ "$in_use" == "false" ] && [ "$port_listening" == "0" ]; then
             echo $candidate_port
@@ -224,23 +224,26 @@ jq --arg key "$PROJECT_KEY" \
    } | .reservedPorts.inUse += [($port | tonumber)] | .reservedPorts.inUse |= unique | .metadata.lastUpdated = $timestamp' \
    "$REGISTRY_FILE" > "$TEMP_FILE"
 
-# Backup original and replace
-cp "$REGISTRY_FILE" "${REGISTRY_FILE}.backup-$(date +%Y%m%d-%H%M%S)"
+# Backup original and replace (rotating backup)
+cp "$REGISTRY_FILE" "${REGISTRY_FILE}.bak"
 mv "$TEMP_FILE" "$REGISTRY_FILE"
 
 log_success "Port allocated successfully!"
-echo ""
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "  Project:  $PROJECT_NAME"
-echo "  Type:     $PORT_TYPE"
-echo "  Port:     $ALLOCATED_PORT"
-echo "  Priority: $PRIORITY"
-echo "  Status:   reserved"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo ""
+echo "" >&2
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" >&2
+echo "  Project:  $PROJECT_NAME" >&2
+echo "  Type:     $PORT_TYPE" >&2
+echo "  Port:     $ALLOCATED_PORT" >&2
+echo "  Priority: $PRIORITY" >&2
+echo "  Status:   reserved" >&2
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" >&2
+echo "" >&2
 log_info "Next steps:"
-echo "  1. Update your docker-compose.yml to use port $ALLOCATED_PORT"
-echo "  2. Run ./check-port.sh $ALLOCATED_PORT to verify it's free"
-echo "  3. Start your service and test"
-echo ""
-log_info "Registry backed up to: ${REGISTRY_FILE}.backup-$(date +%Y%m%d-%H%M%S)"
+echo "  1. Update your docker-compose.yml to use port $ALLOCATED_PORT" >&2
+echo "  2. Run ./check-port.sh $ALLOCATED_PORT to verify it's free" >&2
+echo "  3. Start your service and test" >&2
+echo "" >&2
+log_info "Registry backed up to: ${REGISTRY_FILE}.bak"
+
+# FINAL OUTPUT: JUST THE PORT
+echo "$ALLOCATED_PORT"

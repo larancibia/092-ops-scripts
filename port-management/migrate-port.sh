@@ -164,8 +164,8 @@ jq --arg cat "$PROJECT_CATEGORY" \
     .metadata.lastUpdated = $timestamp
 ' "$REGISTRY_FILE" > "$TEMP_FILE"
 
-# Backup original and replace
-BACKUP_FILE="${REGISTRY_FILE}.backup-$(date +%Y%m%d-%H%M%S)"
+# Backup original and replace (rotating backup)
+BACKUP_FILE="${REGISTRY_FILE}.bak"
 cp "$REGISTRY_FILE" "$BACKUP_FILE"
 mv "$TEMP_FILE" "$REGISTRY_FILE"
 
